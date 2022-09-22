@@ -14,16 +14,9 @@
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@cypress/browserify-preprocessor": "^3.0.2",
     "@cypress/webpack-preprocessor": "latest",
-    "@types/cypress-cucumber-preprocessor": "^4.0.1",
-    "@types/jsonwebtoken": "latest",
-    "@types/yargs": "latest",
     "cypress": "latest",
-    "cypress-real-events": "latest",
-    "jsonwebtoken": "latest",
-    "node-fetch": "latest",
     "ts-loader": "latest",
-    "typescript": "latest",
-    "yargs": "latest"
+    "typescript": "latest"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/e2e/**/*.{js,ts}"

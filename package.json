@@ -1,0 +1,31 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test-ui": "npx tsc cypress/support/initialize/retrieveUserInfo.ts --esModuleInterop --target es2022 --moduleResolution node --resolveJsonModule; node --experimental-json-modules cypress/support/initialize/retrieveUserInfo.js --env testclaimer --https true; npx cypress open",
+    "test-cli": "npx tsc cypress/support/initialize/retrieveUserInfo.ts --esModuleInterop --target es2022 --moduleResolution node --resolveJsonModule; node --experimental-json-modules cypress/support/initialize/retrieveUserInfo.js --env testclaimer --https true;npx cypress run --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@cypress/webpack-preprocessor": "latest",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "@types/jsonwebtoken": "latest",
+    "@types/yargs": "latest",
+    "cypress": "latest",
+    "cypress-real-events": "latest",
+    "jsonwebtoken": "latest",
+    "node-fetch": "latest",
+    "ts-loader": "latest",
+    "typescript": "latest",
+    "yargs": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/**/*.{js,ts}"
+  }
+}
